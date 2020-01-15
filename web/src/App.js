@@ -3,6 +3,7 @@ import React from 'react';
 import './global.css';
 import './App.css';
 import './Sidebar.css';
+import './Main.css';
 
 function App() {
 
@@ -38,7 +39,55 @@ function App() {
         </form>
       </aside>
       <main>
+        <ul>
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars0.githubusercontent.com/u/7799184?s=460&v=4" alt="Rafael Guedes"/>
+              <div className="user-info">
+                <strong>Rafael Guedes</strong>
+                <span>Python, Matlab</span>
+              </div>
+            </header>
+            <p>Oceanographer data scientist</p>
+            <a href="https://github.com/rafa-guedes">Access github profile</a>
+          </li>
 
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars0.githubusercontent.com/u/7799184?s=460&v=4" alt="Rafael Guedes"/>
+              <div className="user-info">
+                <strong>Rafael Guedes</strong>
+                <span>Python, Matlab</span>
+              </div>
+            </header>
+            <p>Oceanographer data scientist</p>
+            <a href="https://github.com/rafa-guedes">Access github profile</a>
+          </li>
+
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars0.githubusercontent.com/u/7799184?s=460&v=4" alt="Rafael Guedes"/>
+              <div className="user-info">
+                <strong>Rafael Guedes</strong>
+                <span>Python, Matlab</span>
+              </div>
+            </header>
+            <p>Oceanographer data scientist</p>
+            <a href="https://github.com/rafa-guedes">Access github profile</a>
+          </li>
+
+          <li className="dev-item">
+            <header>
+              <img src="https://avatars0.githubusercontent.com/u/7799184?s=460&v=4" alt="Rafael Guedes"/>
+              <div className="user-info">
+                <strong>Rafael Guedes</strong>
+                <span>Python, Matlab</span>
+              </div>
+            </header>
+            <p>Oceanographer data scientist</p>
+            <a href="https://github.com/rafa-guedes">Access github profile</a>
+          </li>
+        </ul>
       </main>
     </div>
   );
