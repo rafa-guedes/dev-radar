@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Header from './Header'
+
+// Componente: funcao que retorna conteudo html
+// * One component per file (react rule)
+// * Isolated block of html, css and js that do not interfere with other components in the app
+
+// Estado: Information kept by the component (imutable)
+
+// Propriedade: Atribute in the component, such as title
+// * Information that parent component pass to children
 
 function App() {
+  const [counter, setCounter] = useState(0);
+
+  function incrementCounter() {
+    setCounter(counter + 1);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>Counter: {counter} </h1>
+      <button onClick={incrementCounter}>Increment</button>
+    </>
   );
 }
 
